@@ -11,6 +11,9 @@ Matrix user IDs and can search the homeserver's user directory when available.
 - To invite someone to a room you have opened, use the room's invite action and
   enter their full Matrix ID. The server applies the room's invitation and
   permission rules.
+- To show a room QR code, open the room's invite action and choose **Show room
+  QR code**. Scanning it opens the room's `matrix.to` link; it does not grant
+  access to a private room.
 - To join an existing room, enter its room ID, public alias, or HTTPS
   `matrix.to` link.
 - Share a room link from the room's share action. A link does not grant access
