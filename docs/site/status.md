@@ -1,26 +1,28 @@
 # Project status
 
 This preview describes development code, not a supported production release.
-Earlier Android debug builds compiled locally; the latest room QR-code change
-is waiting for CI validation. Sign-in, encryption, messaging, attachments, and
-room operations have not yet been validated against the maintainer's live
-Synapse homeserver on Android devices.
+The latest Android debug build and lint passed in GitHub Actions for source
+commit `47b53a3`. Sign-in, encryption, messaging, attachments, QR scanning, and
+room operations have not yet been validated on devices against the maintainer's
+live Synapse homeserver.
 
 The app source currently contains a sign-in flow, encrypted local session
 storage, Matrix synchronization, text messaging, replies, reactions, editing,
 redaction, text and file forwarding, file transfer, multi-file selection, receiving
 Android Sharesheet text and files, a loaded-history file gallery, room/Space
 creation, invitations, sharing room permalinks, and joining a room by ID, alias, or
-`matrix.to` link. The current source also adds a QR code for a room permalink;
-that change is waiting for a build check. Local compilation does not confirm
-that these features work with a specific server, account, encrypted room, or
-Android device.
+`matrix.to` link. The current source can also display a room-link QR code and
+scan one into the join dialog. The join dialog asks the user to continue; a QR
+code does not grant access to a private room. The scanner uses Google Play
+services and does not request camera permission from BMatrix. A successful build
+does not confirm that these features work with a specific server, account,
+encrypted room, or Android device.
 
 Wide tablet layouts display the joined room/Space list alongside the active
 conversation. This layout has not yet been checked on a physical tablet.
 
 Voice/video calls, group calls, screen sharing, incoming-call notifications,
-Element Classic key-file import, in-app QR scanning, voice messages,
+Element Classic key-file import, voice messages,
 full-history media search, and a supported signed release are not ready. An
 update-check/download flow is implemented, but no public signed release exists
 for it to install or validate yet. This documentation is a

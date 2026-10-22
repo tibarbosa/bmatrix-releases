@@ -16,6 +16,11 @@ Matrix user IDs and can search the homeserver's user directory when available.
   access to a private room.
 - To join an existing room, enter its room ID, public alias, or HTTPS
   `matrix.to` link.
+- To scan a room QR code, choose **Scan a room QR code** in the join dialog.
+  BMatrix fills in the scanned value; review it and choose **Join a room** to
+  continue. Scanning uses Google Play services and does not request camera
+  permission from BMatrix. If the scanner is unavailable, enter the room ID or
+  link manually.
 - Share a room link from the room's share action. A link does not grant access
   to a private or invite-only room.
 
