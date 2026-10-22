@@ -1,0 +1,9 @@
+{
+  "appVersion": "0.1.0-dev preview",
+  "documentationRevision": "f5a25051d4346a029d91985ae435552823814678",
+  "documentationUrl": "https://tibarbosa.github.io/bmatrix-releases/",
+  "releaseUrl": "https://github.com/tibarbosa/bmatrix-releases/releases",
+  "schemaVersion": 1,
+  "sourceUrl": "https://github.com/tibarbosa/bmatrix-releases/releases",
+  "stable": false
+}
